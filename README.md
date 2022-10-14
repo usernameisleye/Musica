@@ -1,2 +1,2 @@
 # Musica
-A music responsive web page with 1+ responsive pages
+A music responsive web page with 3 fully responsive pages
