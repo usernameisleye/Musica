@@ -122,20 +122,46 @@ main{
     display: flex;
     flex-direction: column;
 }
-.releases{
+.releases, .popular{
     position: relative;
     left: 5%;
     margin: 1rem 2rem;
-    width: 110vw;
 }
-.releases h3{
+.releases h3, .popular h3{
     font-size: 2rem;
     padding: 2rem 0;
 }
-.releases div{
+.releases > div, .popular > div{
     display: flex;
     justify-content: space-between;
+    width: 120%;
 }
-.releases img{
+.releases img, .popular img{
     border-radius: 1.5rem;
+}
+
+/* styling of music player at the bottom */
+.music-player{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 18vh;
+    padding: 1rem 3rem;
+    background: rgba(16, 16, 16, 0.5);
+    backdrop-filter: blur(5px);
+}
+.music-player article{
+    display: flex;
+    height: fit-content;
+}
+
+/* gave both the parent div of the music player text and the text a padding for better alignnment */
+.music-player article div, .music-player p{
+    padding: .3rem .5rem;
+}
+.music-player article img{
+    border-radius: 1.5rem;
+    height: 80%;
 }
