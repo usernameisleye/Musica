@@ -1,6 +1,6 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 body{
@@ -8,6 +8,12 @@ body{
     color: #fff;
     font-family: Quicksand, sans-serif;
 }
+/* .background-image{
+    background-image: url(./img/Lead-image.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: .25;
+} */
 nav{
     display: flex;
     gap: 3rem;
@@ -27,17 +33,11 @@ nav input{
     font-size: 1.1rem;
 }
 
-
-/* styling of header-section */
-header{
+/* styling of main section */
+main{
     display: flex;
-    gap: 1rem;
-    margin: 2rem 1rem;
-    height: fit-content;
-    width: 100vw;
+    gap: 2rem;
 }
-
-/* gave the .hero-playlist a general vector background for better positioning */
 .hero-tabs{
     display: flex;
     flex-direction: column;
@@ -56,88 +56,60 @@ header{
 .hero-tabs img:hover{
     cursor: pointer;
 }
-.hero-playlist{
+
+/* styling of top main section */
+.hero{
     display: flex;
     gap: 2rem;
-    background-color: #609EAF;
-    border-radius: 1rem;
-    width: 60%;
-    background-image: url(./img/Vector.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
 }
-.hero-playlist article{
+.hero img{
+    border-radius: 2rem;
+}
+.hero-text{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin-left: 6%;
+    justify-content: flex-end;
 }
-.pexels{
-    display: block;
-    margin: 0 auto;
-}
-.hero-playlist div h3{
+.hero-text h3{
     font-size: 2rem;
+    padding-bottom: 1rem;
 }
-.frame{
-    display: flex;
-    gap: 1rem;
+.hero-text p{
+    padding-bottom: 1rem;
 }
-
-.hero-charts{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.hero-charts h3{
-    font-size: 2rem;
-}
-.hero-charts article{
-    background-color: hsla(192, 9%, 11%, 1);
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    width: 100%;
-}
-.hero-charts article p{
-    padding: .1rem;
-}
-.mid{
-    padding: 0rem 2rem;
-}
-.mid div{
-    font-size: .8rem;
-}
-.hero-charts a{
-    color: #fff;
+.hero a{
     text-decoration: none;
+    color: #fff;
+    font-size: .8rem;
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: .5rem 1rem;
+    margin: .2rem;
+    border-radius: 1rem;
 }
-.hero-charts i{
-    margin: auto 0;
+.hero a i{
+    color: #E5524A;
+    font-size: 1rem;
 }
 
-/* styling of the main-section */
-main{
+/* styling of list of album music */
+.music-list{
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    margin: 4rem 0;
 }
-.releases, .popular{
-    position: relative;
-    left: 5%;
-    margin: 1rem 2rem;
-}
-.releases h3, .popular h3{
-    font-size: 2rem;
-    padding: 2rem 0;
-}
-.releases > div, .popular > div{
+.music-list article{
     display: flex;
     justify-content: space-between;
-    width: 120%;
+    align-items: center;
+    background-color: rgba(51, 55, 59, 0.37);
+    padding: .5rem 1rem;
+    width: 85vw;
+    border-radius: 1rem;
 }
-.releases img, .popular img{
-    border-radius: 1.5rem;
+.music-list i{
+    color: #FACD66;
+    font-size: 1.2rem;
 }
 
 /* styling of music player at the bottom */
@@ -148,7 +120,7 @@ main{
     justify-content: space-between;
     width: 100%;
     height: 15vh;
-    padding: 1rem 3rem;
+    padding: .5rem 3rem;
     background: rgba(16, 16, 16, 0.5);
     backdrop-filter: blur(5px);
 }
@@ -159,10 +131,10 @@ main{
 }
 
 /* gave both the parent div of the music player text and the text a padding for better alignnment */
-.music-player article div, .music-player p{
+.music-player p{
     padding: .2rem .5rem;
 }
-.music-player article img{
+.music-player article > img{
     border-radius: 1rem;
     height: 30%;
     width: 30%;
@@ -202,4 +174,3 @@ main{
     background-color: aqua;
     border-radius: 2rem;
 }
-
