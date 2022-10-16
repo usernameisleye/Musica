@@ -1,2 +1,4 @@
 # Musica
-A music responsive web page with 3 fully responsive pages
+Ongoing music library website with 2 yet to be completed pages aside the Home page(which are "Tomorrow's Tunes page" and the "Music collection page"
+
+Currently active on GitHub Pages :)
