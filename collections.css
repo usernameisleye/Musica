@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1E1E1E;
+    color: #fff;
+    font-family: Quicksand, sans-serif;
+}
+
+nav{
+    display: flex;
+    gap: 3rem;
+    margin: 2rem 1rem;
+}
+nav input{
+    position: relative;
+    background-color: #1D2123;
+    padding: 1rem 3rem;
+    padding-right: 50%;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+}
+::placeholder{
+    font-family: Quicksand, sans-serif;
+    font-size: 1.1rem;
+}
+
+/* styling of main section */
+main{
+    display: flex;
+    gap: 2rem;
+}
+.hero-tabs{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.tab-1, .tab-2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #1A1E1F;
+    border-radius: 2rem;
+}
+.hero-tabs img{
+    padding: .8rem 1rem;
+}
+.hero-tabs img:hover{
+    cursor: pointer;
+}
+
+/* styling of div with music images */
+.hero{
+    height: 100vh;
+    width: 60vw;
+}
+.music-collection{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+    height: 100%;
+}
+.music-collection article{
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.music-1{
+    background-image: url(./img/Rectangle\ 16.png);
+}
+.music-2{
+    background-image: url(./img/Rectangle\ 19.png);
+}
+.music-3{
+    background-image: url(./img/Rectangle\ 14.png);
+}
+.music-4{
+    background-image: url(./img/Rectangle\ 21.png);
+}
+
+
+/* styling of music player at the bottom */
+.music-player{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+    padding: .5rem 3rem;
+    background: rgba(16, 16, 16, 0.5);
+    backdrop-filter: blur(5px);
+}
+.music-player article{
+    display: flex;
+    margin: auto 0;
+    height: fit-content;
+}
+
+/* gave both the parent div of the music player text and the text a padding for better alignnment */
+.music-player p{
+    padding: .2rem .5rem;
+}
+.music-player article > img{
+    border-radius: 1rem;
+    height: 30%;
+    width: 30%;
+}
+.music-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+.player-items{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.player-items img{
+    padding: 0 1.2rem;
+    transition: .25s;
+}
+.player-items img:hover{
+    cursor: pointer;
+}
+.player-items i{
+    color: #FACD66;
+    box-shadow: 0px 0px 18px rgba(255, 255, 255, 0.3);
+    background-color: #fff;
+    border-radius: 2rem;
+    transition: .25s;
+}
+.player-items i:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 18px rgba(255, 255, 255, 0.8);
+}
+.line{
+    position: relative;
+    width: 100%;
+    height: 4%;
+    background-color: aqua;
+    border-radius: 2rem;
+}

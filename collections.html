@@ -6,73 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collections | Musica</title>
     <link rel="icon" href="./img/logo.svg">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./collections.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d39106e7f3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
-        <img src="" alt="">
+        <img src="./img/logo.svg" alt="">
         <input type="text" placeholder="Search artists">
     </nav>
     <main>
-        <section>
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+        <section class="hero-tabs">
+            <div class="tab-1">
+                <a href="./index.html"><img src="./img/Home.png" alt=""></a>
+                <a href="#"><img src="./img/playlist-1.png" alt=""></i></a>
+                <img src="./img/radio.png" alt="">
+                <img src="./img/videos.png" alt="">
             </div>
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="tab-2">
+                <img src="./img/profile.png" alt="">
+                <img src="./img/Logout.png" alt="">
             </div>
         </section>
+
         <section>
+        <section class="hero">
             <div>
                 <a href="#">My Collections</a>
                 <a href="#">Likes</a>
             </div>
-            <div>
-                <article>
+            <div class="music-collection">
+                <article class="music-1">
                     <h3>Relay road</h3>
                     <p>Walker IO</p>
                 </article>
-                <article>
+                <article class="music-2">
                     <h3>Loop</h3>
                     <p>Cathrine Sky</p>
                 </article>
-                <article>
+                <article class="music-3">
                     <h3>Fragile Beasts</h3>
                     <p>The Readers</p>
                 </article>
-                <article>
+                <article class="music-4">
                     <h3>Glass Wall</h3>
                     <p>Devito</p>
                 </article>
             </div>
         </section>
-
-        <section>
-            <article>
-                <img src="" alt="">
-                <p>Glass Wall</p>
-                <p>Devito</p>
-            </article>
-            <div>
-                <div>
-                    <!-- Shuffle
-                    Back
-                    Play
-                    Foward
-                    Repeat -->
-                </div>
-                <div>
-                    <!-- Music Player -->
-                </div>
-            </div>
-            <div>
-                <!-- Volume -->
-            </div>
-        </section>
     </main>
+    <section class="music-player">
+        <article>
+            <img src="./img/Rectangle 21.png" alt="">
+            <div>
+                <p>Seasons In</p>
+                <p>James</p>
+            </div>
+        </article>
+        <div class="music-items">
+            <div class="player-items">
+                <img src="./player items/shuffle.png" alt="">
+                <img src="./player items/previous.png" alt="">
+                <i class="fa-solid fa-circle-play"></i>
+                <img src="./player items/next.png" alt="">
+                <img src="./player items/repeate-one.png" alt="">
+            </div>
+            <div class="player">
+                <div class="line"></div>
+                <div class="play-width"></div>
+            </div>
+        </div>
+        <div>
+            <img src="./player items/volume-high.png" alt="">
+        </div>
+    </section>
 </body>
 </html>
