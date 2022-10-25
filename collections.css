@@ -55,31 +55,78 @@ main{
 /* styling of div with music images */
 .hero{
     height: 100vh;
-    width: 60vw;
+    width: 90vw;
+}
+.hero a{
+    text-decoration: none;
+    color: #1D2123;
+    font-size: .8rem;
+    padding: .6rem 1rem;
+    border-radius: 1.5rem;
+    transition: .25s;
+}
+.hero div a:nth-child(1){
+    background-color: #FACD66;
+}
+.hero div a:nth-child(2){
+    margin-left: .5rem;
+    padding: .6rem 1.5rem;
+    color: #EFEEE0;
+    border: 1px solid #EFEEE0;
 }
 .music-collection{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    display: flex;
     gap: 1rem;
     margin: 2rem 0;
-    height: 100%;
+
 }
 .music-collection article{
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    position: relative;
+    border-radius: 2rem;
+    height: 30vh;
+    width: 15%;
+    cursor: pointer;
+    transition: all 1.5s;
+}
+.music-collection i{
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    color: #FACD66;
+    background-color: #fff;
+    border-radius: 2rem;
+    font-size: 2rem;
+    opacity: 0;
+}
+.music-collection article:hover{
+    background-size: 120%;
+    opacity: 1;
+}
+.music-collection h3{
+    position: absolute;
+    left: 5%;
+    bottom: 20%;
+    font-size: 1.4rem;
+}
+.music-collection p{
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    font-size: .8rem;
 }
 .music-1{
-    background-image: url(./img/Rectangle\ 16.png);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./img/Rectangle\ 16.png);
 }
 .music-2{
-    background-image: url(./img/Rectangle\ 19.png);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./img/Rectangle\ 19.png);
 }
 .music-3{
-    background-image: url(./img/Rectangle\ 14.png);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./img/Rectangle\ 14.png);
 }
 .music-4{
-    background-image: url(./img/Rectangle\ 21.png);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./img/Rectangle\ 21.png);
 }
 
 
