@@ -60,7 +60,7 @@ header{
     background-color: #609EAF;
     border-radius: 1rem;
     width: 60%;
-    background-image: url(/img/Vector.svg);
+    background-image: url(./img/Vector.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
