@@ -134,7 +134,7 @@ main{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 15vh;
+    height: 18%;
     padding: .5rem 3rem;
     background: rgba(16, 16, 16, 0.5);
     backdrop-filter: blur(5px);
@@ -157,17 +157,32 @@ main{
 .music-items{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 60%;
+    height: 100%;
+    width: 50%;
 }
 .player-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    width: 100%;
     font-size: 2rem;
     padding: 1rem 0;
 }
+.player{
+    height: 50%;
+}
+.line{
+    background-image: linear-gradient(to right, #FACD66 40%,  rgba(255, 255, 255, 0.04) 40%,  rgba(255, 255, 255, 0.04));
+    width: 100%;
+    height: .2rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
 .player-items img{
     padding: 0 1.2rem;
-    transition: .25s;
     cursor: pointer;
+    transition: .25s;
 }
 .player-items i{
     color: #FACD66;
@@ -187,7 +202,7 @@ main{
     width: 10%;
 }
 .volume{
-    background-color: #FACD66;
+    background-image: linear-gradient(to right, #FACD66 40%,  rgba(255, 255, 255, 0.04) 40%,  rgba(255, 255, 255, 0.04));
     width: 100%;
     height: .2rem;
     border-radius: 1rem;
