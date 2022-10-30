@@ -100,6 +100,10 @@ main{
     width: 85vw;
     border-radius: 1rem;
 }
+.music-list p{
+    text-align: center;
+    flex-basis: 15%;
+}
 .music-list i{
     color: #FACD66;
     font-size: 1.2rem;
@@ -128,10 +132,17 @@ main{
     padding: .2rem .5rem;
 }
 .music-player article > img{
-    border-radius: 1rem;
-    height: 30%;
-    width: 30%;
+    border-radius: 50%;
+    height: 40%;
+    width: 40%;
+    animation: spin 8s linear -2s infinite;
 }
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .music-items{
     display: flex;
     flex-direction: column;
