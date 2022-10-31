@@ -98,13 +98,6 @@ main{
     font-size: 2rem;
     opacity: 0;
 }
-.music-collection article:hover .music-collection article img{
-    /* background-size: 120%;
-    opacity: 1; */
-    
-       /* for image */
-    /* transform: scale(1.2); */
-}
 .music-collection h3{
     position: absolute;
     left: 5%;
