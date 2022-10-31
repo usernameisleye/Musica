@@ -219,6 +219,18 @@ main{
     transition: .25s;
     cursor: pointer;
 }
+.pause{
+    background-image: url();
+}
+/* .seePause{
+    font-size: 2rem;
+    color: #FACD66;
+    box-shadow: 0px 0px 18px rgba(255, 255, 255, 0.3);
+    background-color: #fff;
+    border-radius: 2rem;
+    transition: .25s;
+    cursor: pointer;
+} */
 .player-items i:hover{
     box-shadow: 0px 0px 18px rgba(255, 255, 255, 0.8);
 }

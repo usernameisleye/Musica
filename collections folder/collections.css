@@ -88,6 +88,7 @@ main{
     cursor: pointer;
     transition: all 1.5s;
 }
+
 .music-collection i{
     position: absolute;
     right: 5%;
@@ -110,7 +111,10 @@ main{
     border-radius: 2rem;
     filter: brightness(50%);
 }
-.music-collection p{
+.music-1:hover .music-1 i{
+    opacity: 1;
+}
+.music-collection span{
     position: absolute;
     left: 5%;
     bottom: 10%;
