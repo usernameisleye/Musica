@@ -119,6 +119,7 @@ header{
 main{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .releases, .popular{
     position: relative;
@@ -166,7 +167,6 @@ main{
     width: 40%;
     animation: spin 8s linear -2s infinite;
 }
-
 @keyframes spin {
     100%{
         transform: rotate(360deg);
@@ -196,6 +196,7 @@ main{
     height: .2rem;
     border-radius: 1rem;
     margin-top: 1rem;
+    --lenght: 40;
 }
 .player-items img{
     padding: 0 1.2rem;
@@ -209,16 +210,6 @@ main{
     border-radius: 2rem;
     transition: .25s;
     cursor: pointer;
-}
-
-.player-items::after{
-    content: '';
-    height: 2rem;
-    width: 2rem;
-    background-color: #FACD66;
-    border-radius: 50%;
-    box-shadow: 0px 0px 18px rgba(255, 255, 255, 0.3);
-    display: none;
 }
 
 .player-items i:hover{
