@@ -134,6 +134,7 @@ main{
     display: flex;
     justify-content: space-between;
     width: 120%;
+    cursor: pointer;
 }
 .releases img, .popular img{
     border-radius: 1.5rem;
