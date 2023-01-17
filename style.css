@@ -166,6 +166,8 @@ main{
     border-radius: 50%;
     height: 40%;
     width: 40%;
+}
+.animate{
     animation: spin 8s linear -2s infinite;
 }
 @keyframes spin {
@@ -227,8 +229,4 @@ main{
     width: 100%;
     height: .2rem;
     border-radius: 1rem;
-}
-
-@media screen and (max-width:375px) {
-    main{}
 }
