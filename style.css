@@ -168,7 +168,7 @@ main{
     width: 40%;
 }
 .animate{
-    animation: spin 8s linear -2s infinite;
+    animation: spin 8s linear infinite;
 }
 @keyframes spin {
     100%{
